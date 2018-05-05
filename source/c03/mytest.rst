@@ -9,16 +9,16 @@ fasdfsadfsdaf
 .. code-block:: python
 
     class Solution:
-    def rotate(self, nums, k):
-        """
-        :type nums: List[int]
-        :type k: int
-        :rtype: void Do not return anything, modify nums in-place instead.
-        """
-        if len(nums)>1 and k>0 :
-            k = k % len(nums)
-            if k>0 :
-                nums[:] = nums[-k:]+nums[0:len(nums)-k]
+        def rotate(self, nums, k):
+            """
+            :type nums: List[int]
+            :type k: int
+            :rtype: void Do not return anything, modify nums in-place instead.
+            """
+            if len(nums)>1 and k>0 :
+                k = k % len(nums)
+                if k>0 :
+                    nums[:] = nums[-k:]+nums[0:len(nums)-k]
         
 ========================
 3.1 数字的四舍五入
